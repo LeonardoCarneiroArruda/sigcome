@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardview_item_categoria"
+    android:backgroundTint="@color/background_gray">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_inserir_item_quantidade_descricao_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            tools:text="Arroz"
+            android:textSize="@dimen/trinta_e_cinto_sp"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_inserir_item_quantidade_unidade_produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            app:layout_constraintStart_toEndOf="@+id/bt_quantidade_mais"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_inserir_item_compra"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="@+id/et_quantidade_produto"
+            app:layout_constraintEnd_toStartOf="@+id/et_finalizando_compra_preco_produto"
+            tools:text="UN"
+            android:textSize="@dimen/trinta_e_cinto_sp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageview_inserir_item_compra_quantidade"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            app:srcCompat="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toStartOf="@+id/tv_inserir_item_quantidade_descricao_produto"
+            app:layout_constraintEnd_toEndOf="@+id/tv_inserir_item_quantidade_descricao_produto"
+            app:layout_constraintTop_toBottomOf="@+id/tv_inserir_item_quantidade_descricao_produto"
+            />
+
+        <EditText
+            android:id="@+id/et_quantidade_produto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/bt_quantidade_menos"
+            app:layout_constraintEnd_toStartOf="@+id/bt_quantidade_mais"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_inserir_item_compra_quantidade"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:digits="1234567890."
+            android:inputType="numberDecimal"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_quantidade_menos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_menos_60dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_inserir_item_quantidade_descricao_produto"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_inserir_item_compra_quantidade"
+            app:layout_constraintEnd_toStartOf="@+id/et_quantidade_produto"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_quantidade_mais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_mais_60dp"
+            app:layout_constraintStart_toEndOf="@+id/et_quantidade_produto"
+            app:layout_constraintTop_toTopOf="@+id/et_quantidade_produto"
+            app:layout_constraintBottom_toBottomOf="@+id/et_quantidade_produto"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_finalizando_compra_preco_produto"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:layout_constraintStart_toEndOf="@+id/tv_inserir_item_quantidade_unidade_produto"
+            app:layout_constraintEnd_toEndOf="@id/imageview_inserir_item_compra_quantidade"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_inserir_item_compra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColorHint="@color/background_green"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/formulario_inserir_item_compra_preco_produto_hint"
+                android:digits="1234567890."
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

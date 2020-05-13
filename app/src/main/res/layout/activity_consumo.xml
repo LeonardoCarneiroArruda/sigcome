@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConsumoActivity"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_produto_consumo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_consumo_produto_hint"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/spinner_produto"
+        app:layout_constraintEnd_toEndOf="@id/spinner_produto"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/primary_text_font_large"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_produto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_produto_consumo"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_formulario_consumo_quantidade"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_produto">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/formulario_consumo_quantidade_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/bt_finalizar_consumo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/et_formulario_consumo_quantidade"
+        app:layout_constraintEnd_toEndOf="@+id/et_formulario_consumo_quantidade"
+        app:layout_constraintTop_toBottomOf="@+id/et_formulario_consumo_quantidade"
+        android:text="@string/formulario_consumo_botao_finalizar"
+        android:background="@drawable/botao_redondo_verde"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">SIGCOME</string>
+
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+
+    <string name="navbar_menu_inicial_compras">Compras</string>
+    <string name="navbar_menu_inicial_categorias">Categorias</string>
+    <string name="navbar_menu_inicial_produtos">Produtos</string>
+    <string name="navbar_menu_inicial_configuracoes">Configurações</string>
+    <string name="navbar_menu_inicial_sobre">Sobre</string>
+    <string name="navbar_menu_inicial_consumo">Você acabou de comer?</string>
+
+    <string name="formulario_categoria_descricao_hint">Categoria</string>
+
+    <string name="formulario_produto_descricao_hint">Produto</string>
+    <string name="formulario_produto_tipo_unidade_hint">Tipo de unidade</string>
+    <string name="formulario_produto_unidades_minimas_hint">Quantidade mínima para notificar?</string>
+    <string name="formulario_produto_tempo_duracao_hint">Quantos dias duram cada unidade?</string>
+    <string name="formulario_produto_categoria_hint">Categoria do produto</string>
+
+    <string name="menu_formulario_salvar">Salvar</string>
+    <string name="menu_formulario_cancelar">Cancelar</string>
+
+    <string name="formulario_consumo_produto_hint">Você acabou de comer o que?</string>
+    <string name="formulario_consumo_quantidade_hint">Quanto você comeu?</string>
+    <string name="formulario_consumo_botao_finalizar">Finalizar seu consumo</string>
+
+    <string name="formulario_configuracoes_mensagem_inicial">Coloque abaixo as suas informações
+para que possamos sempre sincronizar
+e salvar seus dados do aplicativo
+sempre no mesmo usuário</string>
+    <string name="formulario_configuracoes_nome_hint">Nome</string>
+    <string name="formulario_configuracoes_telefone_hint">Telefone</string>
+    <string name="formulario_configuracoes_email_hint">E-mail</string>
+
+    <string name="formulario_inserir_item_compra_contagem_produtos">5 produtos inseridos</string>
+    <string name="formulario_inserir_item_compra_data_compra_hint">Data da compra</string>
+    <string name="formulario_inserir_item_compra_pesquisar_hint">Pesquisar</string>
+    <string name="formulario_inserir_item_compra_avancar">Avançar</string>
+    <string name="formulario_inserir_item_compra_finalizar_compra">Finalizar Compra</string>
+    <string name="formulario_inserir_item_compra_preco_produto_hint">R$</string>
+</resources>

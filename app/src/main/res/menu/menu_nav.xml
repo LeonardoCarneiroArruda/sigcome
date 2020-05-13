@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/bt_navbar_consumo"
+            android:title="@string/navbar_menu_inicial_consumo"
+            android:icon="@drawable/ic_icone_comer"
+            />
+    </group>
+
+    <group>
+        <item android:id="@+id/bt_navbar_compras"
+            android:icon="@drawable/ic_icone_supermarket"
+            android:title="@string/navbar_menu_inicial_compras"
+            />
+        <item android:id="@+id/bt_navbar_categorias"
+            android:icon="@drawable/ic_icone_category"
+            android:title="@string/navbar_menu_inicial_categorias" />
+        <item android:id="@+id/bt_navbar_produtos"
+            android:icon="@drawable/ic_icone_products"
+            android:title="@string/navbar_menu_inicial_produtos" />
+    </group>
+
+    <group>
+        <item android:id="@+id/bt_navbar_configuracoes"
+            android:icon="@drawable/ic_icone_configuration"
+            android:title="@string/navbar_menu_inicial_configuracoes" />
+        <item android:id="@+id/bt_navbar_sobre"
+            android:icon="@drawable/ic_icone_about"
+            android:title="@string/navbar_menu_inicial_sobre" />
+    </group>
+
+</menu>

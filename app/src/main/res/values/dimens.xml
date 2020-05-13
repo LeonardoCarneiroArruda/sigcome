@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="low_size">64dp</dimen>
+
+    <dimen name="list_item_min_height">12dp</dimen>
+
+    <dimen name="list_item_padding_vertical">9dp</dimen>
+    <dimen name="list_item_padding_horizontal">10dp</dimen>
+
+    <dimen name="primary_text_font_small">10sp</dimen>
+    <dimen name="primary_text_font">16sp</dimen>
+    <dimen name="primary_text_font_large">20sp</dimen>
+    <dimen name="primary_text_font_medium_large">30sp</dimen>
+    <dimen name="trinta_e_cinto_sp">30sp</dimen>
+    <dimen name="primary_text_font_x_large">40sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+</resources>

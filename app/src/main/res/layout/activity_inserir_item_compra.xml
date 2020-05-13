@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InserirItemCompraActivity"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageview_inserir_item_compra"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:color/holo_orange_dark"
+        />
+
+    <TextView
+        android:id="@+id/tv_formulario_inserir_item_contagem_produtos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/formulario_inserir_item_compra_contagem_produtos"
+        android:textSize="@dimen/primary_text_font_large"
+        app:layout_constraintTop_toTopOf="@+id/imageview_inserir_item_compra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview_inserir_item_compra"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_formulario_inserir_item_data_compra"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageview_inserir_item_compra"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/formulario_inserir_item_compra_data_compra_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_formulario_inserir_item_data_compra"
+        app:layout_constraintStart_toStartOf="@+id/et_formulario_inserir_item_data_compra"
+        app:layout_constraintEnd_toEndOf="@+id/et_formulario_inserir_item_data_compra"
+        app:layout_constraintBottom_toTopOf="@+id/bt_inserir_item_compra_avancar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_lista_inserir_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_inserir_item"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <Button
+        android:id="@+id/bt_inserir_item_compra_avancar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/et_formulario_inserir_item_data_compra"
+        app:layout_constraintEnd_toEndOf="@+id/et_formulario_inserir_item_data_compra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/formulario_inserir_item_compra_avancar"
+        android:background="@drawable/botao_redondo_verde"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

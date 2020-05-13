@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/bt_formulario_cancelar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cancelar"
+        android:title="@string/menu_formulario_cancelar"/>
+
+    <item android:id="@+id/bt_formulario_salvar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_salvar"
+        android:title="@string/menu_formulario_salvar"/>
+</menu>
